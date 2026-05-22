@@ -1,0 +1,7 @@
+# Install at least one of `anthropic` or `openai`, matching the provider
+# you set in SETTINGS.txt. Installing both is fine.
+anthropic>=0.40.0
+openai>=1.50.0
+
+pronouncing>=0.2.0
+metaphone>=0.6

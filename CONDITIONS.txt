@@ -1,0 +1,39 @@
+A good pun is a complete utterance that carries actual meaning inside its
+surrounding discourse AND simultaneously activates two readings of an
+ambiguous pivot word. Both readings should be true at the same time.
+
+Required properties:
+
+1. Phonetic closeness — the pivot must sound like (or be identical to)
+   the word that anchors the second reading. Loose homophones are weaker
+   than exact ones.
+
+2. Ambiguity — both readings of the pivot must be plausible inside the
+   sentence at the same time, not one obvious reading with a forced
+   second one bolted on.
+
+3. Distinctiveness — each reading must be anchored by its own balanced
+   set of surrounding context words. If both readings lean on the same
+   evidence, the pun collapses.
+
+4. Surprise — the pivot should be unexpected at its local slot while
+   remaining sensible inside the global topic. The second reading lands
+   as a small reveal, not an obvious telegraph.
+
+5. Discourse fit — the utterance must say something coherent about the
+   topic for its intended audience. An off-topic remark, however clever
+   the wordplay, is a poor pun.
+
+Avoid:
+  - pivots that do not actually sound alike;
+  - readings that fail to fit grammatically into the sentence;
+  - "joke wrapper" sentences that exist only to deliver the pun and
+    contribute nothing else;
+  - puns that mock or alienate the stated audience;
+  - relying on rare, archaic, or obscure word senses the audience would
+    not recognise.
+
+Tone shaping: the tone parameter governs register, not content. A
+"dry" or "deadpan" pun still satisfies all five properties; a "playful"
+one does too. Tone affects sentence rhythm and word choice, never the
+underlying mechanics.

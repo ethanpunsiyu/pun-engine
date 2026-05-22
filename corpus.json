@@ -1,0 +1,733 @@
+[
+  {
+    "pun": {
+      "text": "She told the master his behaviour, like the carpet, would not wash.",
+      "pivot": "wash",
+      "original": "wash",
+      "meaning_local": "the carpet could not be laundered clean",
+      "meaning_global": "his excuse was not credible",
+      "context_local": [
+        "carpet",
+        "told"
+      ],
+      "context_global": [
+        "behaviour",
+        "master"
+      ]
+    },
+    "generator_score": {
+      "phonetic": 1.0,
+      "ambiguity": 0.75,
+      "distinctiveness": 0.8,
+      "surprise": 0.7,
+      "relevance": 0.85,
+      "overall": 0.8175000000000001
+    },
+    "judge": {
+      "overall": 0.9,
+      "source": "hybrid",
+      "phonetic": 1.0,
+      "ambiguity": 0.88,
+      "distinctiveness": 0.82,
+      "surprise": 0.85,
+      "relevance": 0.88,
+      "comment": null
+    },
+    "verified": true,
+    "topic": "cleaning",
+    "audience": "housemaids",
+    "tone": "dry",
+    "added_at": "2026-05-21T16:09:42+00:00"
+  },
+  {
+    "pun": {
+      "text": "The whale researcher submitted her thesis and called the whole project a fluke.",
+      "pivot": "fluke",
+      "original": "fluke",
+      "meaning_local": "the tail of a whale",
+      "meaning_global": "a chance occurrence",
+      "context_local": [
+        "whale",
+        "researcher"
+      ],
+      "context_global": [
+        "thesis",
+        "project"
+      ]
+    },
+    "generator_score": {
+      "phonetic": 1.0,
+      "ambiguity": 0.75,
+      "distinctiveness": 0.75,
+      "surprise": 0.6,
+      "relevance": 0.7,
+      "overall": 0.76
+    },
+    "judge": {
+      "overall": 0.8,
+      "source": "hybrid",
+      "phonetic": 1.0,
+      "ambiguity": 0.88,
+      "distinctiveness": 0.85,
+      "surprise": 0.82,
+      "relevance": 0.9,
+      "comment": null
+    },
+    "verified": true,
+    "topic": "marine biology",
+    "audience": "high-school teachers",
+    "tone": "dry",
+    "added_at": "2026-05-21T15:16:06+00:00"
+  },
+  {
+    "pun": {
+      "text": "The new housekeeper handles every scandal the way she handles the rugs: she sweeps it under.",
+      "pivot": "sweeps it under",
+      "original": "sweeps it under",
+      "meaning_local": "literally sweeps dust under the rug while cleaning",
+      "meaning_global": "hides a scandal from view",
+      "context_local": [
+        "rugs",
+        "housekeeper"
+      ],
+      "context_global": [
+        "scandal",
+        "handles"
+      ]
+    },
+    "generator_score": {
+      "phonetic": 1.0,
+      "ambiguity": 0.75,
+      "distinctiveness": 0.8,
+      "surprise": 0.7,
+      "relevance": 0.85,
+      "overall": 0.8175000000000001
+    },
+    "judge": {
+      "overall": 0.8,
+      "source": "hybrid",
+      "phonetic": 1.0,
+      "ambiguity": 0.7,
+      "distinctiveness": 0.65,
+      "surprise": 0.6,
+      "relevance": 0.85,
+      "comment": null
+    },
+    "verified": true,
+    "topic": "cleaning",
+    "audience": "housemaids",
+    "tone": "dry",
+    "added_at": "2026-05-21T16:09:42+00:00"
+  },
+  {
+    "pun": {
+      "text": "She wrung out the mop and a confession from the under-butler before noon.",
+      "pivot": "wrung out",
+      "original": "wrung out",
+      "meaning_local": "squeezed water from the mop",
+      "meaning_global": "extracted a confession through pressure",
+      "context_local": [
+        "mop",
+        "noon"
+      ],
+      "context_global": [
+        "confession",
+        "under-butler"
+      ]
+    },
+    "generator_score": {
+      "phonetic": 1.0,
+      "ambiguity": 0.7,
+      "distinctiveness": 0.8,
+      "surprise": 0.75,
+      "relevance": 0.8,
+      "overall": 0.805
+    },
+    "judge": {
+      "overall": 0.8,
+      "source": "hybrid",
+      "phonetic": 1.0,
+      "ambiguity": 0.92,
+      "distinctiveness": 0.9,
+      "surprise": 0.88,
+      "relevance": 0.9,
+      "comment": null
+    },
+    "verified": true,
+    "topic": "cleaning",
+    "audience": "housemaids",
+    "tone": "dry",
+    "added_at": "2026-05-21T16:09:42+00:00"
+  },
+  {
+    "pun": {
+      "text": "The maid quit halfway through the laundry; she said she was airing her grievances.",
+      "pivot": "airing",
+      "original": "airing",
+      "meaning_local": "hanging laundry out to dry in the air",
+      "meaning_global": "publicly voicing complaints",
+      "context_local": [
+        "laundry",
+        "halfway"
+      ],
+      "context_global": [
+        "grievances",
+        "quit"
+      ]
+    },
+    "generator_score": {
+      "phonetic": 1.0,
+      "ambiguity": 0.7,
+      "distinctiveness": 0.8,
+      "surprise": 0.65,
+      "relevance": 0.85,
+      "overall": 0.795
+    },
+    "judge": {
+      "overall": 0.8,
+      "source": "hybrid",
+      "phonetic": 1.0,
+      "ambiguity": 0.85,
+      "distinctiveness": 0.8,
+      "surprise": 0.7,
+      "relevance": 0.88,
+      "comment": null
+    },
+    "verified": true,
+    "topic": "cleaning",
+    "audience": "housemaids",
+    "tone": "dry",
+    "added_at": "2026-05-21T16:09:42+00:00"
+  },
+  {
+    "pun": {
+      "text": "My dad said cleaning the kitchen builds character, but I think he's just stirring up trouble.",
+      "pivot": "stirring",
+      "original": "stirring",
+      "meaning_local": "mixing food in the kitchen",
+      "meaning_global": "causing trouble or commotion",
+      "context_local": [
+        "cleaning",
+        "kitchen"
+      ],
+      "context_global": [
+        "trouble",
+        "dad",
+        "said"
+      ]
+    },
+    "generator_score": {
+      "phonetic": 1.0,
+      "ambiguity": 0.75,
+      "distinctiveness": 0.7,
+      "surprise": 0.5,
+      "relevance": 0.85,
+      "overall": 0.7625000000000001
+    },
+    "judge": {
+      "overall": 0.75,
+      "source": "hybrid",
+      "phonetic": 1.0,
+      "ambiguity": 0.65,
+      "distinctiveness": 0.55,
+      "surprise": 0.6,
+      "relevance": 0.8,
+      "comment": null
+    },
+    "verified": true,
+    "topic": "relating to the household",
+    "audience": "kids",
+    "added_at": "2026-05-21T14:46:00+00:00"
+  },
+  {
+    "pun": {
+      "text": "My brother left his socks everywhere, and honestly, it's just toe-tally unfair.",
+      "pivot": "toe-tally",
+      "original": "totally",
+      "meaning_local": "unfair in a foot-related way",
+      "meaning_global": "totally unfair",
+      "context_local": [
+        "socks",
+        "everywhere"
+      ],
+      "context_global": [
+        "unfair",
+        "honestly",
+        "brother"
+      ]
+    },
+    "generator_score": {
+      "phonetic": 1.0,
+      "ambiguity": 0.55,
+      "distinctiveness": 0.6,
+      "surprise": 0.5,
+      "relevance": 0.8,
+      "overall": 0.6875
+    },
+    "judge": {
+      "overall": 0.7,
+      "source": "hybrid",
+      "phonetic": 1.0,
+      "ambiguity": 0.45,
+      "distinctiveness": 0.52,
+      "surprise": 0.65,
+      "relevance": 0.8,
+      "comment": null
+    },
+    "verified": true,
+    "topic": "relating to the household",
+    "audience": "kids",
+    "added_at": "2026-05-21T14:46:00+00:00"
+  },
+  {
+    "pun": {
+      "text": "The mountaineer reached the summit and shouted a triumphant hi.",
+      "pivot": "hi",
+      "original": "high",
+      "meaning_local": "a high altitude reached on the peak",
+      "meaning_global": "a cheerful hello called out",
+      "context_local": [
+        "mountaineer",
+        "summit"
+      ],
+      "context_global": [
+        "shouted",
+        "cheerful"
+      ]
+    },
+    "generator_score": {
+      "phonetic": 1.0,
+      "ambiguity": 0.7,
+      "distinctiveness": 0.7,
+      "surprise": 0.6,
+      "relevance": 0.8,
+      "overall": 0.76
+    },
+    "judge": {
+      "overall": 0.7,
+      "source": "hybrid",
+      "phonetic": 1.0,
+      "ambiguity": 0.6,
+      "distinctiveness": 0.55,
+      "surprise": 0.5,
+      "relevance": 0.7,
+      "comment": null
+    },
+    "verified": true,
+    "topic": "greetings",
+    "audience": "everyone",
+    "added_at": "2026-05-21T14:56:23+00:00"
+  },
+  {
+    "pun": {
+      "text": "I waved at the ocean and it gave me a swell hello.",
+      "pivot": "swell",
+      "original": "swell",
+      "meaning_local": "a rising wave on the ocean",
+      "meaning_global": "a wonderful, excellent greeting",
+      "context_local": [
+        "waved",
+        "ocean"
+      ],
+      "context_global": [
+        "hello",
+        "gave"
+      ]
+    },
+    "generator_score": {
+      "phonetic": 1.0,
+      "ambiguity": 0.7,
+      "distinctiveness": 0.7,
+      "surprise": 0.55,
+      "relevance": 0.8,
+      "overall": 0.75
+    },
+    "judge": {
+      "overall": 0.7,
+      "source": "hybrid",
+      "phonetic": 1.0,
+      "ambiguity": 0.85,
+      "distinctiveness": 0.82,
+      "surprise": 0.8,
+      "relevance": 0.88,
+      "comment": "should have utilised 'waved' into the mix too missed opportunity"
+    },
+    "verified": true,
+    "topic": "greetings",
+    "audience": "everyone",
+    "added_at": "2026-05-21T14:56:23+00:00"
+  },
+  {
+    "pun": {
+      "text": "The programmer's marriage ended after one too many unresolved conflicts.",
+      "pivot": "conflicts",
+      "original": "conflicts",
+      "meaning_local": "merge conflicts in version control",
+      "meaning_global": "interpersonal disputes in a relationship",
+      "context_local": [
+        "programmer",
+        "unresolved"
+      ],
+      "context_global": [
+        "marriage",
+        "ended"
+      ]
+    },
+    "generator_score": {
+      "phonetic": 1.0,
+      "ambiguity": 0.8,
+      "distinctiveness": 0.85,
+      "surprise": 0.6,
+      "relevance": 0.9,
+      "overall": 0.8275000000000001
+    },
+    "judge": {
+      "overall": 0.82,
+      "source": "llm",
+      "phonetic": 1.0,
+      "ambiguity": 0.85,
+      "distinctiveness": 0.82,
+      "surprise": 0.75,
+      "relevance": 0.88,
+      "comment": "Slightly telegraphed by 'programmer' but both readings land cleanly and simultaneously."
+    },
+    "verified": false,
+    "topic": "computers",
+    "audience": "general",
+    "tone": "dry",
+    "added_at": "2026-05-21T15:23:49+00:00"
+  },
+  {
+    "pun": {
+      "text": "I asked the IT guy out, but he said he wasn't ready to commit.",
+      "pivot": "commit",
+      "original": "commit",
+      "meaning_local": "save changes permanently to a code repository",
+      "meaning_global": "enter a serious romantic relationship",
+      "context_local": [
+        "IT",
+        "guy"
+      ],
+      "context_global": [
+        "asked",
+        "out",
+        "ready"
+      ]
+    },
+    "generator_score": {
+      "phonetic": 1.0,
+      "ambiguity": 0.75,
+      "distinctiveness": 0.8,
+      "surprise": 0.65,
+      "relevance": 0.85,
+      "overall": 0.8075000000000001
+    },
+    "judge": {
+      "overall": 0.8,
+      "source": "llm",
+      "phonetic": 1.0,
+      "ambiguity": 0.88,
+      "distinctiveness": 0.8,
+      "surprise": 0.72,
+      "relevance": 0.85,
+      "comment": "The romantic reading is strong but 'IT guy' leans the pivot toward the coding sense a little early."
+    },
+    "verified": false,
+    "topic": "computers",
+    "audience": "general",
+    "tone": "dry",
+    "added_at": "2026-05-21T15:23:49+00:00"
+  },
+  {
+    "pun": {
+      "text": "We hid the teacher's chalk before math, and now the whole lesson isn't adding up.",
+      "pivot": "adding up",
+      "original": "adding up",
+      "meaning_local": "performing addition on the board",
+      "meaning_global": "making sense",
+      "context_local": [
+        "chalk",
+        "math",
+        "lesson"
+      ],
+      "context_global": [
+        "hid",
+        "isn't",
+        "whole"
+      ]
+    },
+    "generator_score": {
+      "phonetic": 1.0,
+      "ambiguity": 0.7,
+      "distinctiveness": 0.75,
+      "surprise": 0.65,
+      "relevance": 0.9,
+      "overall": 0.7975
+    },
+    "judge": {
+      "overall": 0.78,
+      "source": "llm",
+      "phonetic": 1.0,
+      "ambiguity": 0.82,
+      "distinctiveness": 0.8,
+      "surprise": 0.72,
+      "relevance": 0.88,
+      "comment": "Minor weakness is that 'adding up' as an idiom is very common, slightly reducing surprise, but the dual anchoring via chalk/math and hid/isn't is well-balanced."
+    },
+    "verified": false,
+    "topic": "classroom mischief",
+    "audience": "kids",
+    "tone": "dry",
+    "added_at": "2026-05-21T15:22:30+00:00"
+  },
+  {
+    "pun": {
+      "text": "The class clown finally crossed a line \u2014 unfortunately, it was the one I'd drawn on the desk.",
+      "pivot": "crossed a line",
+      "original": "crossed a line",
+      "meaning_local": "drew across a mark on the furniture",
+      "meaning_global": "violated a behavioural boundary",
+      "context_local": [
+        "drawn",
+        "desk",
+        "one"
+      ],
+      "context_global": [
+        "class clown",
+        "finally",
+        "unfortunately"
+      ]
+    },
+    "generator_score": {
+      "phonetic": 1.0,
+      "ambiguity": 0.85,
+      "distinctiveness": 0.8,
+      "surprise": 0.75,
+      "relevance": 0.9,
+      "overall": 0.8625
+    },
+    "judge": {
+      "overall": 0.76,
+      "source": "llm",
+      "phonetic": 1.0,
+      "ambiguity": 0.82,
+      "distinctiveness": 0.78,
+      "surprise": 0.72,
+      "relevance": 0.88,
+      "comment": "The pivot phrase is idiomatically strong but the physical reading requires a slightly contrived setup (a line drawn on a desk is an odd detail)."
+    },
+    "verified": false,
+    "topic": "classroom mischief",
+    "audience": "high-school teachers",
+    "tone": "dry",
+    "added_at": "2026-05-21T15:18:49+00:00"
+  },
+  {
+    "pun": {
+      "text": "I got caught passing notes in music class; the teacher said I'd struck the wrong chord.",
+      "pivot": "chord",
+      "original": "chord",
+      "meaning_local": "a musical combination of notes",
+      "meaning_global": "done something socially or behaviorally wrong",
+      "context_local": [
+        "music",
+        "class",
+        "notes"
+      ],
+      "context_global": [
+        "caught",
+        "wrong",
+        "teacher"
+      ]
+    },
+    "generator_score": {
+      "phonetic": 1.0,
+      "ambiguity": 0.75,
+      "distinctiveness": 0.8,
+      "surprise": 0.65,
+      "relevance": 0.9,
+      "overall": 0.8175000000000001
+    },
+    "judge": {
+      "overall": 0.72,
+      "source": "llm",
+      "phonetic": 1.0,
+      "ambiguity": 0.78,
+      "distinctiveness": 0.75,
+      "surprise": 0.65,
+      "relevance": 0.82,
+      "comment": "Solid pun but 'struck the wrong chord' is a well-worn idiom, so the surprise value is dampened by its familiarity."
+    },
+    "verified": false,
+    "topic": "classroom mischief",
+    "audience": "kids",
+    "tone": "dry",
+    "added_at": "2026-05-21T15:22:30+00:00"
+  },
+  {
+    "pun": {
+      "text": "The student who keeps passing notes in my class has excellent delivery.",
+      "pivot": "delivery",
+      "original": "delivery",
+      "meaning_local": "the act of passing notes from desk to desk",
+      "meaning_global": "skill in performing or speaking",
+      "context_local": [
+        "passing",
+        "notes",
+        "class"
+      ],
+      "context_global": [
+        "excellent",
+        "student"
+      ]
+    },
+    "generator_score": {
+      "phonetic": 1.0,
+      "ambiguity": 0.75,
+      "distinctiveness": 0.7,
+      "surprise": 0.55,
+      "relevance": 0.9,
+      "overall": 0.7825000000000001
+    },
+    "judge": {
+      "overall": 0.7,
+      "source": "llm",
+      "phonetic": 1.0,
+      "ambiguity": 0.78,
+      "distinctiveness": 0.72,
+      "surprise": 0.65,
+      "relevance": 0.85,
+      "comment": "Solid and clean, but the note-passing setup telegraphs the punchline a beat too early, reducing surprise."
+    },
+    "verified": false,
+    "topic": "classroom mischief",
+    "audience": "high-school teachers",
+    "tone": "dry",
+    "added_at": "2026-05-21T15:18:49+00:00"
+  },
+  {
+    "pun": {
+      "text": "Catching them with phones out during the quiz was a real test of my patience.",
+      "pivot": "test",
+      "original": "test",
+      "meaning_local": "an exam in the classroom",
+      "meaning_global": "a trial of one's endurance",
+      "context_local": [
+        "phones",
+        "quiz",
+        "during"
+      ],
+      "context_global": [
+        "real",
+        "patience",
+        "my"
+      ]
+    },
+    "generator_score": {
+      "phonetic": 1.0,
+      "ambiguity": 0.75,
+      "distinctiveness": 0.75,
+      "surprise": 0.4,
+      "relevance": 0.9,
+      "overall": 0.7600000000000001
+    },
+    "judge": {
+      "overall": 0.7,
+      "source": "llm",
+      "phonetic": 1.0,
+      "ambiguity": 0.78,
+      "distinctiveness": 0.7,
+      "surprise": 0.65,
+      "relevance": 0.88,
+      "comment": "Solid double meaning but 'test of my patience' is such a stock phrase that the surprise factor is muted, making the pivot feel somewhat predictable."
+    },
+    "verified": false,
+    "topic": "classroom mischief",
+    "audience": "high-school teachers",
+    "tone": "dry",
+    "added_at": "2026-05-21T15:20:37+00:00"
+  },
+  {
+    "pun": {
+      "text": "The pair who keep launching spitballs from the back have clearly missed the point.",
+      "pivot": "missed the point",
+      "original": "missed the point",
+      "meaning_local": "failed to hit a target with their projectiles",
+      "meaning_global": "failed to grasp the lesson",
+      "context_local": [
+        "launching",
+        "spitballs",
+        "back"
+      ],
+      "context_global": [
+        "clearly",
+        "the point",
+        "have"
+      ]
+    },
+    "generator_score": {
+      "phonetic": 1.0,
+      "ambiguity": 0.8,
+      "distinctiveness": 0.8,
+      "surprise": 0.65,
+      "relevance": 0.9,
+      "overall": 0.8300000000000001
+    },
+    "judge": {
+      "overall": 0.65,
+      "source": "llm",
+      "phonetic": 1.0,
+      "ambiguity": 0.72,
+      "distinctiveness": 0.65,
+      "surprise": 0.6,
+      "relevance": 0.85,
+      "comment": "The idiom 'missed the point' is so familiar in the academic sense that the physical-projectile reading feels slightly forced rather than truly simultaneous."
+    },
+    "verified": false,
+    "topic": "classroom mischief",
+    "audience": "high-school teachers",
+    "tone": "dry",
+    "added_at": "2026-05-21T15:20:37+00:00"
+  },
+  {
+    "pun": {
+      "text": "She drew on her desk during art and the principal said she'd crossed a line.",
+      "pivot": "crossed a line",
+      "original": "crossed a line",
+      "meaning_local": "drew a stroke across the desk surface",
+      "meaning_global": "violated acceptable behavior",
+      "context_local": [
+        "drew",
+        "desk",
+        "art"
+      ],
+      "context_global": [
+        "principal",
+        "said"
+      ]
+    },
+    "generator_score": {
+      "phonetic": 1.0,
+      "ambiguity": 0.8,
+      "distinctiveness": 0.75,
+      "surprise": 0.7,
+      "relevance": 0.9,
+      "overall": 0.8325
+    },
+    "judge": {
+      "overall": 0.65,
+      "source": "llm",
+      "phonetic": 1.0,
+      "ambiguity": 0.72,
+      "distinctiveness": 0.65,
+      "surprise": 0.6,
+      "relevance": 0.8,
+      "comment": "The idiom 'crossed a line' leans heavily toward the behavioral meaning, making the literal drawing sense feel slightly forced rather than truly simultaneous."
+    },
+    "verified": false,
+    "topic": "classroom mischief",
+    "audience": "kids",
+    "tone": "dry",
+    "added_at": "2026-05-21T15:22:30+00:00"
+  }
+]

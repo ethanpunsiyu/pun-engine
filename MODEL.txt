@@ -1,0 +1,22 @@
+# MODEL.txt — hand-picked model puns.
+#
+# This file is NOT AI-processed. Strict syntax — pipes (|) separate fields,
+# whitespace around them is fine. Only the pun text is required.
+#
+# Syntax (pick one form per line):
+#
+#     <text>
+#     <text> | <rating 1-10>
+#     <text> | <rating 1-10> | <comment>
+#
+# Lines starting with # are comments. Blank lines are ignored.
+# A `|` inside the pun text must be escaped as `\|`.
+#
+# Examples (delete or replace with your own — these are seeds, not law):
+
+Time flies like an arrow; fruit flies like a banana. | 9 | classic pivot ambiguity on "flies"
+I used to be a banker, but I lost interest. | 8 | financial / motivational dual reading
+A bicycle can't stand on its own because it's two tired. | 6 | weak — "two/too" is the only mechanic
+I'm reading a book on anti-gravity. It's impossible to put down. | 8 |
+The shovel was a groundbreaking invention. | 9 | strong: both readings co-anchored
+She had a photographic memory but never developed it. | 8 | technical / cognitive dual reading
