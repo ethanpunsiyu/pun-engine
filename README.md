@@ -11,10 +11,10 @@ An AI pun generator, powered by general LLM models, which self-improves through 
 
 A good pun is said to be when 'both meanings of the ambiguous word are true at the same time'. With this in mind, therefore the variables that measure the potency of a pun would be as follows:
 
-- Phonetic distance: How close the 'anchor words' sound: processed with phonetic libraries
-- Ambiguity: The presence of two similarly likely interpretations for a single sentence
-- Distinctiveness: Both interpretations should be supported adequately by balanced sets of context words that support each meaning
-- Surprise: The humour effect when a word appears unexpectedly in its local context but remains sensible within its global context
+- **Phonetic distance**: How close the 'anchor words' sound: processed with phonetic libraries
+- **Ambiguity**: The presence of two similarly likely interpretations for a single sentence
+- **Distinctiveness**: Both interpretations should be supported adequately by balanced sets of context words that support each meaning
+- **Surprise**: The humour effect when a word appears unexpectedly in its local context but remains sensible within its global context
 
 ## Brief on the structure of the project
 
@@ -23,7 +23,7 @@ A good pun is said to be when 'both meanings of the ambiguous word are true at t
   - **CORPUS**: When a pun is deemed a score higher than the threshold, it is stored into the CORPUS, tagged UNVERIFIED or VERIFIED based on respectively whether or not it was judged by another LLM model or alongside a user. 
   - **LEARNLOG**: At the end of each JUDGE session, a summary is appended to the LEARNLOG, taking input from the CORPUS and previous summaries to generate a guide for the system to follow.
 
-## Files
+## Files (A)
 
 | File              | Role                                                                 | AI-processed |
 | ----------------- | -------------------------------------------------------------------- | ------------ |
@@ -74,7 +74,7 @@ Backoff is exponential with jitter, capped at 60s, retry count from
 pip3 install -r requirements.txt
 ```
 
-#### LLM setup
+#### LLM setup (A)
 
 The program works with either Anthropic or OpenAI. The former is recommended.
 
