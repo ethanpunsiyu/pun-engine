@@ -1,19 +1,82 @@
-# PunGenerator
+> [!IMPORTANT]  
+> This project is programmed by _Claude Code_
 
-An AI pun generator that explicitly scores its output against the four
-properties that make puns work (phonetic closeness, ambiguity,
-distinctiveness, surprise) plus discourse relevance, judges the result with
-an independent model (and optionally a human), and learns from a curated
-corpus over time.
+# PUNGENERATOR
 
-## Install
+An AI pun generator, powered by general LLM models, which self-improves through phonetic scoring and LLM-as-judge systems.
 
-```bash
-pip install -r requirements.txt
+## Metrics of judgement
+
+> A pun is 'a humourous use of a word or phrase that has several meanings or that sounds like another word'.
+
+A good pun is said to be when 'both meanings of the ambiguous word are true at the same time'. With this in mind, therefore the variables that measure the potency of a pun would be as follows:
+
+- Phonetic distance: How close the 'anchor words' sound: processed with phonetic libraries
+- Ambiguity: The presence of two similarly likely interpretations for a single sentence
+- Distinctiveness: Both interpretations should be supported adequately by balanced sets of context words that support each meaning
+- Surprise: The humour effect when a word appears unexpectedly in its local context but remains sensible within its global context
+
+## Brief on the structure of the project
+
+- **PUNGENERATOR**: A base pun generator, which takes in ① the number of puns to be generated in that batch, ② the topic of the puns, ③ the audiences targetted, and ④ the tone of the puns. Every time a pun is generated, learnt summaries are fed back into the system.
+- **JUDGE mode**: The JUDGE mode is the functionality which provides self-improvement. It consists of the following modules:
+  - **CORPUS**: When a pun is deemed a score higher than the threshold, it is stored into the CORPUS, tagged UNVERIFIED or VERIFIED based on respectively whether or not it was judged by another LLM model or alongside a user. 
+  - **LEARNLOG**: At the end of each JUDGE session, a summary is appended to the LEARNLOG, taking input from the CORPUS and previous summaries to generate a guide for the system to follow.
+
+## Files
+
+| File              | Role                                                                 | AI-processed |
+| ----------------- | -------------------------------------------------------------------- | ------------ |
+| `CONDITIONS.txt`  | Plain-English brief on what counts as a good pun.                    | read-only    |
+| `MODEL.txt`       | Hand-picked gold-standard puns. Strict pipe-delimited syntax.        | read-only    |
+| `SETTINGS.txt`    | All tunable options (`key = value`, one per line).                   | read-only    |
+| `corpus.json`     | Top puns, each marked VERIFIED / UNVERIFIED.                         | read/write   |
+| `learnlog.json`   | History of AI-written "lessons" — latest one feeds the generator.    | written      |
+| `archive.txt`     | JSON-lines dump of corpus entries demoted below threshold.           | written      |
+
+For files intended wholly to be user-written, check the comments preceding their contents for information on the syntax.
+
+## Data flow (A)
+
+```
+            ┌── CONDITIONS.txt ─────────┐
+            ▼                           ▼
+   generator ──► judge ─┬─► corpus ─► archive.txt (below threshold)
+       ▲                ├─► learnlog (refreshed when corpus changes)
+       │                └─► returns judged rows
+       │                                │
+       │              ┌─ MODEL.txt ─────┤
+       │              │                 ▼
+       └─ latest_summary() ◄── learnlog summariser
 ```
 
-The codebase works with either Anthropic or OpenAI. Set the provider in
-`SETTINGS.txt`:
+- Generator reads CONDITIONS, the latest learnlog summary, and a random sample of corpus exemplars (count from `SETTINGS.txt`).
+- Judge reads CONDITIONS and rates puns against the same rubric; default judge model is different from the generator (set in `SETTINGS.txt`).
+- Corpus tracks VERIFIED (human-touched) and UNVERIFIED (LLM-only) entries.
+- Learnlog summary primarily compares MODEL.txt puns against the corpus to surface the gap between current output and the gold standard.
+
+## Overload protection (A)
+
+All API calls go through `safety.safe_complete`, which retries on:
+
+- connection / timeout errors (both providers),
+- rate limits (429),
+- any 5xx (including Anthropic's 529 "Overloaded").
+
+Backoff is exponential with jitter, capped at 60s, retry count from
+`max_api_retries` in `SETTINGS.txt` (default 6).
+
+## Installation
+
+#### Installing the prerequisite libraries
+
+```bash
+pip3 install -r requirements.txt
+```
+
+#### LLM setup
+
+The program works with either Anthropic or OpenAI. The former is recommended.
 
 ```
 provider = anthropic     # or: openai
@@ -35,45 +98,13 @@ export ANTHROPIC_API_KEY=...      # for provider = anthropic
 export OPENAI_API_KEY=...         # for provider = openai
 ```
 
-You only need to `pip install` the package for the provider you're using;
-`requirements.txt` lists both for convenience.
-
-## Files
-
-| File              | Role                                                                 | AI-processed |
-| ----------------- | -------------------------------------------------------------------- | ------------ |
-| `CONDITIONS.txt`  | Plain-English brief on what counts as a good pun.                    | read-only    |
-| `MODEL.txt`       | Hand-picked gold-standard puns. Strict pipe-delimited syntax.        | read-only    |
-| `SETTINGS.txt`    | All tunable options (`key = value`, one per line).                   | read-only    |
-| `corpus.json`     | Top puns, each marked VERIFIED / UNVERIFIED.                         | read/write   |
-| `learnlog.json`   | History of AI-written "lessons" — latest one feeds the generator.    | written      |
-| `archive.txt`     | JSON-lines dump of corpus entries demoted below threshold.           | written      |
-
-`MODEL.txt`, `CONDITIONS.txt`, and `SETTINGS.txt` are meant to be edited by
-hand. `corpus.json` is also safe to edit by hand if needed.
-
-### MODEL.txt syntax
-
-```
-<pun text>
-<pun text> | <rating 1-10>
-<pun text> | <rating 1-10> | <comment>
-```
-
-`\|` inside the text escapes a literal pipe. Lines starting with `#` and
-blank lines are ignored.
-
-## Commands
+## Commands (A)
 
 ### One-liner (recommended)
 
 ```bash
 python3 pun.py 5 "marine biology" "high-school teachers" --mode hybrid --tone playful
 ```
-
-Generates → judges → writes qualifying entries to the corpus → refreshes
-the learnlog. Everything in one process, so human/hybrid prompts work
-without stdin gymnastics.
 
 Options:
 - `--mode {llm, human, hybrid}` — judge mode (default `llm`).
@@ -143,35 +174,4 @@ python3 learnlog.py history --limit 5
 python3 settings.py           # prints loaded settings as JSON
 ```
 
-## Data flow
 
-```
-            ┌── CONDITIONS.txt ─────────┐
-            ▼                           ▼
-   generator ──► judge ─┬─► corpus ─► archive.txt (below threshold)
-       ▲                ├─► learnlog (refreshed when corpus changes)
-       │                └─► returns judged rows
-       │                                │
-       │              ┌─ MODEL.txt ─────┤
-       │              │                 ▼
-       └─ latest_summary() ◄── learnlog summariser
-```
-
-- Generator reads CONDITIONS, the latest learnlog summary, and a random
-  sample of corpus exemplars (count from `SETTINGS.txt`).
-- Judge reads CONDITIONS and rates puns against the same rubric; default
-  judge model is different from the generator (set in `SETTINGS.txt`).
-- Corpus tracks VERIFIED (human-touched) and UNVERIFIED (LLM-only) entries.
-- Learnlog summary primarily compares MODEL.txt puns against the corpus to
-  surface the gap between current output and the gold standard.
-
-## Overload protection
-
-All API calls go through `safety.safe_complete`, which retries on:
-
-- connection / timeout errors (both providers),
-- rate limits (429),
-- any 5xx (including Anthropic's 529 "Overloaded").
-
-Backoff is exponential with jitter, capped at 60s, retry count from
-`max_api_retries` in `SETTINGS.txt` (default 6).
